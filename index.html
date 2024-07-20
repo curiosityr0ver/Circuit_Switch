@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boolean Circuit Puzzle</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Boolean Circuit Puzzle</h1>
+            <div class="puzzle">
+                <div class="row">
+                    <div class="switch" id="switch1" onclick="toggleSwitch(1)">Switch 1</div>
+                    <div class="switch" id="switch2" onclick="toggleSwitch(2)">Switch 2</div>
+                    <div class="switch" id="switch3" onclick="toggleSwitch(3)">Switch 3</div>
+                    <div class="switch" id="switch4" onclick="toggleSwitch(4)">Switch 4</div>
+                </div>
+                <div class="row">
+                    <div class="switch" id="switch5" onclick="toggleSwitch(5)">Switch 5</div>
+                    <div class="switch" id="switch6" onclick="toggleSwitch(6)">Switch 6</div>
+                    <div class="switch" id="switch7" onclick="toggleSwitch(7)">Switch 7</div>
+                    <div class="switch" id="switch8" onclick="toggleSwitch(8)">Switch 8</div>
+                </div>
+                <div class="row">
+                    <div class="gate" id="xorGate1">
+                        <div class="output" id="xorOutput1">0</div>
+                        XOR1
+                    </div>
+                    <div class="gate" id="andGate1">
+                        <div class="output" id="andOutput1">0</div>
+                        AND1
+                    </div>
+                    <div class="gate" id="norGate1">
+                        <div class="output" id="norOutput1">0</div>
+                        NOR1
+                    </div>
+                    <div class="gate" id="nandGate1">
+                        <div class="output" id="nandOutput1">0</div>
+                        NAND1
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="gate" id="andGate2">
+                        <div class="output" id="andOutput2">0</div>
+                        AND2
+                    </div>
+                    <div class="gate" id="xorGate2">
+                        <div class="output" id="xorOutput2">0</div>
+                        XOR2
+                    </div>
+                    <div class="gate" id="norGate2">
+                        <div class="output" id="norOutput2">0</div>
+                        NOR2
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="gate" id="nandGate2">
+                        <div class="output" id="nandOutput2">0</div>
+                        NAND2
+                    </div>
+                    <div class="gate" id="andGate3">
+                        <div class="output" id="andOutput3">0</div>
+                        AND3
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="gate" id="notGate4">
+                        <div class="output" id="notOutput4">0</div>
+                        NOT4
+                    </div>
+                </div>
+                <div class="output final" id="finalOutput">0</div>
+                <div id="message" class="hidden">
+                    <div class="card" onclick="navigateToCongratulations()">
+                        <div class="front" id="cardFront">Someone is going to IIT</div>
+                        <div class="back hidden" id="cardBack">Sushma Jha</div>
+                    </div>
+                </div>
+            </div>
+            <div id="confetti" class="hidden"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
